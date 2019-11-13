@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Constructores
 {
-    //CONSTRUCTORES -- PILDORAS INFORMÁTICAS VIDEO 30
+    //CONSTRUCTORES -- PILDORAS INFORMÁTICAS VIDEO 30 --
     //  https://www.youtube.com/watch?v=FobGQKXVpH0&list=PLU8oAlHdN5BmpIQGDSHo5e1r4ZYWQ8m4B&index=30
     class Program
     {
