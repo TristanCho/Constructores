@@ -25,6 +25,9 @@ namespace Constructores
             Coche coche3 = new Coche(4500.25, 1200.35);
 
             Console.WriteLine(coche3.getInfoCoche());
+            coche3.setExtras(true, "cuero");
+
+            Console.WriteLine(coche3.getExtras());
 
         }
     }
@@ -37,7 +40,8 @@ namespace Constructores
             ruedas = 4;
             largo = 2300.5;
             ancho = 0.800;
-            //climatizador = true;
+            climatizador = false;
+            tapiceria = "Tela";
         }
 
         public Coche(double largoCoche, double anchoCoche)
@@ -45,6 +49,8 @@ namespace Constructores
             ruedas = 4;
             largo = largoCoche;
             ancho = anchoCoche;
+            tapiceria = "Tela";
+            climatizador = false;
         }
 
         public String getInfoCoche()
@@ -53,17 +59,23 @@ namespace Constructores
             return "Información del coche: \nRuedas: " + ruedas + " \nLargo: " + largo + "\nAncho: " + ancho + "\n";
         }
 
-        public void setExtras(bool paramClimatizador, String paramTapiceria)
+       
+        public void setExtras(bool climatizador, String tapiceria)
         {
-            climatizador = paramClimatizador;
-            tapiceria = paramTapiceria;
+            this.climatizador = climatizador;//Si le dejo climatizador = climatizador: se observa una ambigüedad y genera un error lógico ya que no se visualiza el valor correcto
+            this.tapiceria = tapiceria;//this. hace referencia a la variable o campo de clase... es decir al objeto en el que nos encontremos, en la propia clase
+        }
+
+        public String getExtras()
+        {
+            return "Extras del coche:\n" + "Tapicería: " + tapiceria + "\nClimatizador: " + climatizador;
         }
 
         private int ruedas;
         private double largo;
         private double ancho;
-        private bool climatizador;
-        private string tapiceria;
+        private bool climatizador;//por defecto el valor es false
+        private String tapiceria;//por defecto el valor es ""  -- Vacío
 
     }
 }
