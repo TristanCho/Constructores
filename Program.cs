@@ -31,6 +31,7 @@ namespace Constructores
     {
         
         public Coche() //Este es el constructor que no es ni void ni devuelve nada es un metoddo especial - El constructor debe tener el mismo nombre de la clase
+            //Todas las clases tienen un constructor aunque no se vea por defecto estará invocando al constructor por defecto, en este caso public Coche(){ruedas=...}...
         {
             ruedas = 4;
             largo= 2300.5;
