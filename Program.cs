@@ -8,7 +8,7 @@ namespace Constructores
 {
     //CONSTRUCTORES -- PILDORAS INFORMÁTICAS VIDEO 30 --
     //  https://www.youtube.com/watch?v=FobGQKXVpH0&list=PLU8oAlHdN5BmpIQGDSHo5e1r4ZYWQ8m4B&index=30 //VT30 Constructores 
-    //  https://www.youtube.com/watch?v=7HGwVYsdAxI&list=PLU8oAlHdN5BmpIQGDSHo5e1r4ZYWQ8m4B&index=31 //GETTER Y SETTER
+    //  https://www.youtube.com/watch?v=7HGwVYsdAxI&list=PLU8oAlHdN5BmpIQGDSHo5e1r4ZYWQ8m4B&index=31 //VT31 GETTER Y SETTER
     class Program
     {
         static void Main(string[] args)
